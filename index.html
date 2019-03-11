@@ -8,8 +8,9 @@
     <!-- Bootstrap Css  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Eponential Confrence</title>
+    <link rel="stylesheet" href="Css/custom.css">
 </head>
-<body>
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
       <div class="container">
@@ -34,7 +35,7 @@
               <h1 class="display-2 text-white">Exponential Confrences</h1>
               <p class="lead text-white">150+ speakers: today's top church multiplication leaders. 200+ workshops taught by true practitioners.</p>
               <div class="btn-group mt-4" role="group" aria-label="Callout button">
-                <button type="button" class="btn btn-primary btn-lg">Register Now</button>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
                 <a class="btn btn-light btn-lg" href="speakers">See Speakers</a>
               </div>
             </div>
@@ -42,7 +43,7 @@
 
     <div class="container pt-4">
      <!-- About  -->
-        <div class="row">
+        <div id="about" class="row">
           <div class="col-lg col-xl-6 order-lg-2">
                 <h3 class="mb-4 text-sm-center">About Exponential Confrence</h3>
                 <img class="mb-4 d-none d-sm-block img-fluid rounded" src="img/epcotdownload.jpg" alt="Magic Kingdom at Disney">
@@ -56,68 +57,146 @@
                 <p>Full Stack Conf is committed to being inclusive and welcoming for everyone. We look forward to another intensive day of learning and sharing.</p>
           </div>
          <div class="col-lg order-lg-3">
-                <h3 class="mb-4">What You'll Learn</h3>
-                <ul>
-                  <li><strong>MongoDB</strong>: NoSQL database</li>
-                  <li><strong>Express</strong>: Framework for Node</li>
-                  <li><strong>React</strong>: JavaScript library</li>
-                  <li><strong>Node.js</strong>: JavaScript environment</li>
-                  <li><strong>ES2015</strong>: Latest version of JavaScript</li>
-                  <li><strong>Babel</strong>: JavaScript compiler</li>
-                </ul>
+            <h3 class="mb-4">What You'll Learn</h3>
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action"><strong>MongoDB</strong>: NoSQL database</a>
+              <a href="#" class="list-group-item list-group-item-action"><strong>Express</strong>: Framework for Node</a>
+              <a href="#" class="list-group-item list-group-item-action"><strong>React</strong>: JavaScript library</a>
+              <a href="#" class="list-group-item list-group-item-action"><strong>Node.js</strong>: JavaScript environment</a>
+              <a href="#" class="list-group-item list-group-item-action"><strong>ES2015</strong>: Latest version of JavaScript</a>
+              <a href="#" class="list-group-item list-group-item-action"><strong>Babel</strong>: JavaScript compiler</a>
+            </div>
           </div>
         </div>
         
          <!-- Speakers -->
         <h1 id="speakers" class="display-4 text-center my-5 text-muted">Speakers</h1>
         <div class="row">
-            <div class="col-md-6">
-                <div class="card mb-3">
-                <img src="img/francis-chan-2.jpg" class="card-img-top" alt="Francis Chan">
-                <div class="card-body">
-                  <h5 class="card-title">Francis Chan</h5>
-                  <p class="card-text">Francis Chan is national speaker. He is the former teaching pastor of Cornerstone Community Church in Simi Valley, California, a church he and his wife started in 1994. He is also the founder and chancellor of Eternity Bible College and author of several books</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-md-6">
-              <div class="card mb-3">
-                <img src="img/dave-ferguson-300x200.jpg" class="card-img-top" alt="Dave Ferguson">
-                <div class="card-body">
-                  <h5 class="card-title">Dave Ferguson</h5>
-                  <p class="card-text">Dave Feruson is the lead pastor of Community Christian Church. He is the president and board chair for Exponential, the largest church planning confrence in the world and is on the board of Leadership Network.</p>
-              </div>
-             </div>
-            <div class="col-md-6">
-                
-            </div>
-            
-            <div class="col-md-6">
-            </div>
-            
-            <div class="col-md-6">
-            </div>
-            
-            <div class="col-md-6">
-            </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-3">
+            <img src="img/Alan-Hirsch-268x179.jpg" class="card-img-top" alt="Alan Hirsc">
+            <div class="card-body">
+              <h5 class="card-title">Alan Hirsch</h5>
+              <p class="card-text">Alan Hirsch is the founding director of 100 Movements, 5Q Collective, and Forge Mission Training Network. He has written numerous seminal books including The Forgotten Ways, and 5Q. Alan is known for his innovative approach to mission, church, and leadership.</p>
+           </div>
+         </div>
         </div>
-
+        
+          <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+              <img src="img/francis-chan-2.jpg" class="card-img-top" alt="Francis Chan">
+              <div class="card-body">
+                <h5 class="card-title">Francis Chan</h5>
+                <p class="card-text">Francis Chan is the best-selling author of Letters to the Church, Crazy Love, Forgotten God, and You and Me Forever. Currently, Francis is planting churches in the San Francisco area. Together, Francis and his wife Lisa raise their seven children in Northern California.</p>
+             </div>
+           </div>
+          </div>
+        
+          <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+              <img src="img/drewhyun-268x179.jpg" class="card-img-top" alt="Drew Hyun">
+              <div class="card-body">
+                <h5 class="card-title">Drew Hyun</h5>
+                <p class="card-text">Drew is the Founder and Pastor of Hope Church Midtown, as well as the Founding Pastor of Hope Church NYC, a family of diverse churches in New York City. In addition to Drew’s leadership at Hope, he is the Co-Founder of the New City Network, a network of diverse, urban churches in Global Cities.</p>
+             </div>
+           </div>
+          </div>
+        
+          <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+              <img src="img/Dave-Clayton-1-268x179.jpg" class="card-img-top" alt="Dave Clayton">
+              <div class="card-body">
+                <h5 class="card-title">Dave Clayton</h5>
+                <p class="card-text">Dave Clayton is the founding pastor of Ethos Church, a young, urban church plant located in the heart of Nashville, TN, and the founder and visionary of Onward Church Planting and Awaken Nashville. Dave is passionate about making disciples and planting churches in North anerica and beyond.</p>
+             </div>
+           </div>
+          </div>
+        
+          <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+              <img src="img/dave-ferguson-300x200.jpg" class="card-img-top" alt="Dave Ferguson">
+              <div class="card-body">
+                <h5 class="card-title">Dave Ferguson</h5>
+                <p class="card-text">Dave Ferguson is the lead pastor of Community Christian Church, an innovative multi-site missional community that is passionate about "helping people find their way back to God." Dave provides visionary leadership for NewThing, whose mission is to be a catalyst for movements of reproducing churches. Dave is the president and board chair for Exponential.</p>
+             </div>
+           </div>
+          </div>
+        
+          <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+              <img src="img/John-Mark-Comer-268x179.jpg" class="card-img-top" alt="John Mark Comer">
+              <div class="card-body">
+                <h5 class="card-title">John Mark Comer</h5>
+                <p class="card-text">John Mark Comer lives, works, and writes in the urban core of Portland, Oregon, with his wife, Tammy, and their three children. He is the pastor for teaching and vision at Bridgetown Church. He is the author of Loveology, My Name Is Hope, Garden City and God Has a Name .</p>
+             </div>
+           </div>
+          </div>
+        </div><!-- /speakers -->
 
          <!-- Schedule -->
-         <h1 class="display-4 text-center my-5 text-muted">Schedule</h1>
-         
-    
+         <h1 id="schedule" class="display-4 text-center my-5 text-muted">Schedule</h1>
+
+         <ul class="list-group">
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between">
+              <h5 class="mb-1">Keynote: Church Planting</h5>
+              <span class="badge badge-pill badge-info p-2">9:00am</span>
+            </div>
+            <p class="mb-1">Alan Hirsh</p>
+          </li>
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between">
+              <h5 class="mb-1">Discipleship</h5>
+              <span class="badge badge-pill badge-info p-2">10:00am</span>
+            </div>
+            <p class="mb-1">Francis Chan</p>
+          </li>
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between">
+              <h5 class="mb-1">Leadership</h5>
+              <span class="badge badge-pill badge-info p-2">11:00am</span>
+            </div>
+            <p class="mb-1">John Mark Comer</p>
+          </li>
+          <li class="list-group-item list-group-item-success">
+            <div class="d-flex justify-content-between">
+              <h5 class="mb-1">Lunch</h5>
+              <span class="badge badge-pill badge-info p-2">12:00pm</span>
+            </div>
+            <p class="mb-1">Free pizza for everyone!</p>
+          </li>
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between">
+              <h5 class="mb-1">Multiplication</h5>
+              <span class="badge badge-pill badge-info p-2">1:00pm</span>
+            </div>
+            <p class="mb-1">Dave Clayton</p>
+          </li> 
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between">
+              <h5 class="mb-1">Missional Living</h5>
+              <span class="badge badge-pill badge-info p-2">2:00pm</span>
+            </div>
+            <p class="mb-1">Drew Hyun</p>
+          </li> 
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between">
+              <h5 class="mb-1">Multisite</h5>
+              <span class="badge badge-pill badge-info p-2">3:00pm</span>
+            </div>
+            <p class="mb-1">Dave Ferguson</p>
+          </li>        
+        </ul>
 
          <!-- Call to action buttons -->         
-         <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-5">Don't Miss Out, Register Now</button>
+         <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#register">Don't Miss Out, Register Now</button>
 
 
          <!-- Signup form -->
          <hr>
          <div class="row py-4 text-muted">
            <div class="col-md col-xl-5">
-             <p><strong>About Treehouse</strong></p>
+             <p><strong>About Exponential</strong></p>
              <p>The Exponential regional confrences are designed to bring the full impact of of the main stage for the leaders who can't attend the national confrence. </p>
            </div>
            <div class="col-md col-xl-5 ml-auto">
@@ -164,6 +243,130 @@
     </div>
     </div> 
     
+    <!-- Form Modal -->
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title" id="exampleModalLabel">Register for Exponential Conf</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+             <!-- Registration form -->
+             <form>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Hurry!</strong> Early bird registration ends April 3rd.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+
+               <h5 class="mb-4">Basic Info</h5>
+              <div class="form-group">
+                <label class="form-control-label" for="name">Name:</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="form-group">
+                <label class="form-control-label" for="email">Email:</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <label for="role">Ministry Role</label>
+                <select class="custom-select form-control" id="role">
+                  <option value="full stack js developer">Lead Pastor</option>
+                  <option value="front end developer">Associate Pastor</option>
+                  <option value="back end developer">Ministry Staff</option>
+                  <option value="designer">Other</option>
+                </select>
+              </div>
+
+              <hr class="my-4">
+              <h5 class="mb-4">Which Breakouts Interest You Most?</h5>
+
+              <div class="form-check">
+                  <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1">Church planting</label>
+                  </label>
+              </div>
+              <div class="form-check">
+                  <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1">Multiplying Disciples</label>
+                  </label>
+              </div>
+              <div class="form-check">
+                  <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1">Multi-Site</label>
+                  </label>
+              </div>
+              <div class="form-check">
+                  <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1">Leadership</label>
+                  </label>
+              </div>
+              <hr class="mb-4">
+              <h5 class="mb-4">Payment Info</h5>
+
+              <div class="form-row">
+                  <div class="col-lg-6 form-group">
+                    <label for="cc-num">Card Number:</label>
+                    <input class="form-control" id="cc-num" type="text">
+                  </div>
+                
+                  <div class="col-lg form-group">
+                    <label for="zip">Zip Code:</label>
+                    <input class="form-control" id="zip" type="text">
+                  </div>
+                
+                  <div class="col-lg form-group">
+                    <label for="cvv">CVV:</label>
+                    <input class="form-control" id="cvv" type="text">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <label class="col-lg-12">Expiration Date:</label>
+                  
+            <div class="form-group col-lg-8">
+                <select class="custom-select form-control" id="exp-month">
+                    <option value="1">1 - January</option>
+                    <option value="2">2 - February</option>
+                    <option value="3">3 - March</option>
+                    <option value="4">4 - April</option>
+                    <option value="5">5 - May</option>
+                    <option value="6">6 - June</option>
+                    <option value="7">7 - July</option>
+                    <option value="8">8 - August</option>
+                    <option value="9">9 - September</option>
+                    <option value="10">10 - October</option>
+                    <option value="11">11 - November</option> 
+                    <option value="12">12 - December</option>
+                  </select> 
+            </div>
+              
+            <div class="form-group col-lg">
+                <select class="custom-select form-control" id="exp-year">                                                         
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2020">2021</option>
+                    <option value="2020">2022</option>
+                  </select>  
+            </div>
+          </div>
+
+          <hr class="mb-4">
+            <button type="submit" class="btn btn-primary btn-lg">Register</button>
+      </form>
+             <!-- Registration form -->
+
+          </div>
+        </div>
+      </div>
+    </div>
    
     <!-- Optional JavaScript -->
     <!-- JQuery First then Proper Js then Bootstrap Js -->
